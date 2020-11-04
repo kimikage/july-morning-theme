@@ -1,0 +1,31 @@
+
+svg.swatches text {
+    font-size: 8px;
+    display: none;
+}
+svg.swatches g rect:hover {
+    stroke-width: 1;
+    stroke: currentColor;
+}
+
+svg.swatches g:hover text {
+    display: inherit;
+}
+
+svg.swatches g rect.choosed {
+    stroke-width: 1.5;
+    stroke: #aaa;
+    animation: stroke-blink 1s infinite alternate;
+}
+
+@keyframes stroke-blink {
+    0% {
+        stroke-opacity: 0;
+    }
+    50% {
+        stroke-opacity: 0;
+    }
+    100% {
+        stroke-opacity: 1;
+    }
+}

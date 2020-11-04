@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+$themename: "documenter-light";
+
+
+$family-monospace:
+    'JuliaMono',
+    'Roboto Mono',
+    'SFMono-Regular',
+    'Menlo',
+    'Consolas',
+    'Liberation Mono',
+    'DejaVu Sans Mono',
+    monospace;
+
+@import "./basiccolors";
+
+$grey-darker: hsl(0, 0%, 21%);
+
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$compat: $turquoise;
+
+$lightness-unit: 8%;
+
+$admonition-colors: ('default': $grey-darker, 'info': $info, 'success': $success, 'warning': $warning,
+    'danger': $danger, 'compat': $compat,
+);
+
+$admonition-background: ();
+$admonition-body-color: ();
+
+@each $name, $color in $admonition-colors {
+    $bg: desaturate(change-color($color, $lightness: 50% + 5 * $lightness-unit), 10%);
+
+    $admonition-background: map-merge($admonition-background, ($name: $bg)) !global;
+
+    $admonition-body-color: map-merge($admonition-body-color, ($name: findColorInvert($bg))) !global;
+}
+
+@import "documenter-light";
+
+@import "./ansicolors";
