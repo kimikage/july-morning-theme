@@ -1,0 +1,17 @@
+$red: #cb3c33;
+$orange: #d56c00;
+$yellow: #f4c72f;
+$green: #259a12;
+$turquoise: #00a1b7;
+$cyan: #3489da;
+$blue: #3c5dcd;
+$purple: #9558b2;
+
+$red-dark: adjust-color($red, $hue: -3, $saturation: 8, $lightness: -10);
+$orange-dark: adjust-color($orange, $hue: -1, $saturation: 0, $lightness: -7);
+$yellow-dark: adjust-color($yellow, $hue: 2, $saturation: 10, $lightness: -29);
+$green-dark: adjust-color($green, $hue: 4, $saturation: 21, $lightness: -9);
+$turquoise-dark: adjust-color($turquoise, $hue: 0, $saturation: 0, $lightness: -8);
+$cyan-dark: adjust-color($cyan, $hue: -5, $saturation: 31, $lightness: -22);
+$blue-dark: adjust-color($blue, $hue: -4, $saturation: 14, $lightness: -14);
+$purple-dark: adjust-color($purple, $hue: 0, $saturation: 1, $lightness: -11);

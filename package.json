@@ -1,0 +1,23 @@
+{
+  "name": "july-morning-theme",
+  "description": "light and dark syntax highlighting themes.",
+  "homepage": "https://kimikage.github.io/july-morning-theme/stable/",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "kimikage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimikage/july-morning-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimikage/july-morning-theme/issues",
+    "email": "kimikage.ceo@gmail.com"
+  },
+  "keywords": [
+    "highlighting",
+    "highlightjs",
+    "julia",
+    "syntax",
+    "syntax-highlighting"
+  ]
+}

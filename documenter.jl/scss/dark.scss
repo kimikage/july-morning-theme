@@ -1,0 +1,112 @@
+@charset "UTF-8";
+// The Documente dark theme is a modified version of the Darkly theme from Bulmaswatch:
+// https://jenil.github.io/bulmaswatch/, https://github.com/jenil/bulmaswatch
+$themename: "documenter-dark"; // CSS file must be called `$(themename).css`
+
+// Darkly wants to @import the Lato font by default, but we don't need it.
+$bulmaswatch-import-font: false;
+
+$documenter-is-dark-theme: true;
+
+@import "darkly/variables";
+
+// Darkly sets the font variables, so we need to override them here
+$family-sans-serif: 'Lato Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: 'JuliaMono', 'SFMono-Regular', 'Menlo', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+
+$body-size: 16px;
+$border-width: 1px;
+$lightness-unit: -8%;
+
+@import "./basiccolors";
+
+$primary: #3dd0af;
+$link: $primary;
+$link-hover: lighten($link, 5);
+$link-focus: darken($link, 5);
+$link-active: darken($link, 5);
+
+@import "documenter/utilities";
+@import "documenter/variables";
+
+$info: $cyan-dark;
+$success: $green-dark;
+$warning: $yellow-dark;
+$danger: $red-dark;
+$compat: $turquoise-dark;
+
+$admonition-colors: ('default': $grey-darker, 'info': $info, 'success': $success, 'warning': $warning,
+    'danger': $danger, 'compat': $compat,
+);
+
+$admonition-background: ('default': $background, 'info': $background, 'success': $background, 'warning': $background,
+    'danger': $background, 'compat': $background);
+$admonition-header-background: ('default': $grey);
+
+$documenter-sidebar-background: $grey-darker;
+$shadow: #171717;
+$documenter-sidebar-color: $text;
+
+$code: #ff8674;
+$code-background: rgba(255, 255, 255, 0.05);
+
+$documenter-docstring-shadow: none;
+
+@import "bulma/utilities/all";
+@import "bulma/base/minireset.sass";
+@import "bulma/base/helpers.sass";
+
+// Search box, version selector etc.
+$input-color: $grey-lighter;
+$input-background-color: $body-background-color;
+$input-border-color: $border;
+$input-placeholder-color: rgba($input-color, 0.3);
+
+$button-static-color: $grey-lighter;
+$button-static-background-color: $background;
+$button-static-border-color: $border;
+
+// All secondary themes have to be nested in a theme--$(themename) class. When Documenter
+// switches themes, it applies this class to <html> and then disables the primary
+// stylesheet.
+html.theme--#{$themename} {
+
+  @import "bulma/base/generic.sass";
+
+  @import "documenter/overrides";
+
+  @import "bulma/elements/all";
+  @import "bulma/form/all";
+  @import "bulma/components/all";
+  @import "bulma/grid/all";
+  @import "bulma/layout/all";
+
+  @import "darkly/overrides";
+
+  @import "documenter/elements";
+  @import "documenter/components/all";
+  @import "documenter/patches";
+  @import "documenter/layout/all";
+
+  @import "documenter/theme_overrides";
+
+  @import "./ansicolors";
+
+  // highlight.js color scheme override for the julia> prompt
+  code.language-julia-repl > span.hljs-meta {
+    color: $ansi-green;
+    font-weight: bolder;
+  }
+
+  code.nohighlight {
+    line-height: 1.42;
+  }
+  code.nohighlight span {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+
+  @import "../../dist/highlight/july-night";
+}

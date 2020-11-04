@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+$themename: "documenter-light";
+
+@import "./basiccolors";
+
+$grey-darker: hsl(0, 0%, 21%);
+
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$compat: $turquoise;
+
+$code: adjust-color($red, $hue: -9, $saturation: 32, $lightness: -22);
+
+$lightness-unit: 8%;
+
+$admonition-colors: ('default': $grey-darker, 'info': $info, 'success': $success, 'warning': $warning,
+    'danger': $danger, 'compat': $compat,
+);
+
+$admonition-background: ();
+$admonition-body-color: ();
+
+@each $name, $color in $admonition-colors {
+  $bg: desaturate(change-color($color, $lightness: 50% + 5 * $lightness-unit), 10%);
+
+  $admonition-background: map-merge($admonition-background, ($name: $bg)) !global;
+
+  $admonition-body-color: map-merge($admonition-body-color, ($name: findColorInvert($bg))) !global;
+}
+
+@import "documenter/utilities";
+@import "documenter/variables";
+
+@import "bulma/utilities/all";
+@import "bulma/base/all";
+
+@import "documenter/overrides";
+
+@import "bulma/elements/all";
+@import "bulma/form/all";
+@import "bulma/components/all";
+@import "bulma/grid/all";
+@import "bulma/layout/all";
+
+@import "documenter/elements";
+@import "documenter/components/all";
+@import "documenter/patches";
+@import "documenter/layout/all";
+
+@import "./ansicolors";
+
+// highlight.js color scheme override for the julia> prompt
+code.language-julia-repl > span.hljs-meta {
+  color: $ansi-green;
+  font-weight: bolder;
+}
+
+code.nohighlight {
+  line-height: 1.42;
+}
+code.nohighlight span {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+@import "../../dist/highlight/july-morning";

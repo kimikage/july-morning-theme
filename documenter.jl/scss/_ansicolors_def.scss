@@ -1,0 +1,34 @@
+@if $documenter-is-dark-theme {
+  $ansi-red: adjust-color($red, $hue: 3, $saturation: 29, $lightness: 17) !default;
+  $ansi-green: adjust-color($green, $hue: -2, $saturation: -28, $lightness: 13) !default;
+  $ansi-yellow: $yellow !default;
+  $ansi-blue: adjust-color($blue, $hue: 5, $saturation: 21, $lightness: 18) !default;
+  $ansi-magenta: adjust-color($purple, $hue: 1, $saturation: 13, $lightness: 16) !default;
+  $ansi-cyan: adjust-color($turquoise, $hue: 2, $saturation: -45, $lightness: 18) !default;
+  $ansi-white: lighten($grey-light, 14) !default;
+
+  $ansi-light-black: darken($ansi-white, 12) !default;
+  $ansi-light-red: adjust-color($ansi-red, $hue: 1, $saturation: 11, $lightness: 6) !default;
+  $ansi-light-green: adjust-color($ansi-green, $hue: -2, $saturation: 6, $lightness: 14) !default;
+  $ansi-light-yellow: adjust-color($ansi-yellow, $hue: 4, $saturation: 10, $lightness: 14) !default;
+  $ansi-light-blue: adjust-color($ansi-blue, $hue: 1, $saturation: 20, $lightness: 7) !default;
+  $ansi-light-magenta: adjust-color($ansi-magenta, $hue: 0, $saturation: 16, $lightness: 9) !default;
+  $ansi-light-cyan: adjust-color($ansi-cyan, $hue: 1, $saturation: 6, $lightness: 10) !default;
+}
+@else {
+  $ansi-light-black: darken($grey, 4) !default;
+  $ansi-light-red: $red !default;
+  $ansi-light-green: adjust-color($green, $hue: 2, $saturation: 21, $lightness: -8) !default;
+  $ansi-light-yellow: adjust-color($yellow, $hue: 2, $saturation: 10, $lightness: -24) !default;
+  $ansi-light-blue: $blue !default;
+  $ansi-light-magenta: adjust-color($purple, $hue: 0, $saturation: -1, $lightness: -1) !default;
+  $ansi-light-cyan: adjust-color($turquoise, $hue: 0, $saturation: 0, $lightness: -4) !default;
+
+  $ansi-red: adjust-color($ansi-light-red, $hue: -3, $saturation: 9, $lightness: -11) !default;
+  $ansi-green: adjust-color($ansi-light-green, $hue: 3, $saturation: 0, $lightness: -4) !default;
+  $ansi-yellow: adjust-color($ansi-light-yellow, $hue: 0, $saturation: 0, $lightness: -7) !default;
+  $ansi-blue: adjust-color($ansi-light-blue, $hue: -3, $saturation: 9, $lightness: -11) !default;
+  $ansi-magenta: adjust-color($ansi-light-magenta, $hue: 0, $saturation: 2, $lightness: -8) !default;
+  $ansi-cyan: adjust-color($ansi-light-cyan, $hue: 0, $saturation: 0, $lightness: -5) !default;
+  $ansi-white: lighten($ansi-light-black, 12) !default;
+}
