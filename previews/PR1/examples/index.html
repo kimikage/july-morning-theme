@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Examples · July Morning/Night</title><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script><link href="../assets/styles.css" rel="stylesheet" type="text/css"/><script src="../assets/highlight.min.js"></script><script src="../assets/hljs.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">July Morning/Night</span></div><form class="docs-search" action="../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../">Introduction</a></li><li class="is-active"><a class="tocitem" href>Examples</a><ul class="internal"><li><a class="tocitem" href="#Julia"><span>Julia</span></a></li><li><a class="tocitem" href="#YAML"><span>YAML</span></a></li><li><a class="tocitem" href="#JSON"><span>JSON</span></a></li><li><a class="tocitem" href="#HTML"><span>HTML</span></a></li><li><a class="tocitem" href="#CSS"><span>CSS</span></a></li></ul></li><li><a class="tocitem" href="../design-language/">Design Language</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Examples</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Examples</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/kimikage/july-morning-theme/blob/master/documenter.jl/src/examples.md" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h1 id="Examples"><a class="docs-heading-anchor" href="#Examples">Examples</a><a id="Examples-1"></a><a class="docs-heading-anchor-permalink" href="#Examples" title="Permalink"></a></h1><h2 id="Julia"><a class="docs-heading-anchor" href="#Julia">Julia</a><a id="Julia-1"></a><a class="docs-heading-anchor-permalink" href="#Julia" title="Permalink"></a></h2><pre><code class="language-julia">module Utilities
+
+using Printf
+using Colors
+using FixedPointNumbers
+
+export lch_to_rgb, lch_to_rgb8, tweak_color
+export ColorWheel, VariationSwatches
+
+# Many graphics tools set the white point in the Lab color space to D50 and use
+# a linear bradford transform to convert it to the D65 in the sRGB color space.
+
+function rgb_to_lab(c::RGB)
+    xyz65 = convert(XYZ, c)
+    xyz50 = bradford(xyz65, Colors.WP_D65, Colors.WP_D50)
+    convert(Lab, xyz50, Colors.WP_D50)
+end
+
+function lab_to_rgb(c::Lab)
+    xyz50 = convert(XYZ, c, Colors.WP_D50)
+    xyz65 = bradford(xyz50, Colors.WP_D50, Colors.WP_D65)
+    convert(RGB, xyz65)
+end
+
+rgb_to_lch(c::RGB) = convert(LCHab, rgb_to_lab(c))
+lch_to_rgb(c::LCHab) = lab_to_rgb(convert(Lab, c))
+
+lch_to_rgb8(c::LCHab) = convert(RGB{N0f8}, lch_to_rgb(c))
+
+function bradford(c::XYZ, src::XYZ, dest::XYZ)
+    BFD = [ 0.8951  0.2664 -0.1614
+           -0.7502  1.7135  0.0367
+            0.0389 -0.0685  1.0296 ]
+    BFD_INV = inv(BFD)
+
+    c_lms = BFD * [c.x, c.y, c.z]
+    src_wp = BFD * [src.x, src.y, src.z]
+    dest_wp = BFD * [dest.x, dest.y, dest.z]
+    c_out = BFD_INV * (c_lms .* dest_wp ./ src_wp)
+    (typeof(c))(c_out...)
+end
+
+function contrust(c1::RGB, c2::RGB)
+    xyz1 = convert(XYZ, c1)
+    xyz2 = convert(XYZ, c2)
+    l2, l1 = minmax(xyz1.y, xyz2.y)
+    cont = (l1 + 0.05) / (l2 + 0.05)
+end
+
+tweak_color(c::RGB, dl, dc = 0, dh = 0) = tweak_color(rgb_to_lch(c), dl, dc, dh)
+
+function tweak_color(c::LCHab, dl, dc = 0, dh = 0)
+    lch_to_rgb8(LCHab(c.l + dl * 2.5, c.c + dl * 5, c.h + dh))
+end
+
+struct ColorWheel
+    id::String
+    colors1::Vector{RGB}
+    colors2::Vector{RGB}
+    bg::RGB
+end
+
+Base.showable(::MIME&quot;image/svg+xml&quot;, ::ColorWheel) = true
+
+function Base.show(io::IO, ::MIME&quot;image/svg+xml&quot;, cw::ColorWheel)
+    write(io, &quot;&quot;&quot;&lt;svg id=&quot;$(cw.id)&quot; class=&quot;colorwheel&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      width=&quot;60mm&quot; height=&quot;60mm&quot; viewBox=&quot;-60,-60,120,120&quot;
+                      fill=&quot;none&quot; stroke=&quot;none&quot;&gt;&quot;&quot;&quot;)
+    write(io, &quot;&quot;&quot;&lt;rect fill=&quot;#$(hex(cw.bg))&quot; x=&quot;-60&quot; y=&quot;-60&quot; width=&quot;120&quot; height=&quot;120&quot; /&gt;&quot;&quot;&quot;)
+    colors = vcat(cw.colors1, cw.colors2)
+    for rgb in colors
+        lch = rgb_to_lch(rgb)
+        l = lch.l * 0.6
+        c = min(lch.c / 130, 1.0)
+        write(io, &quot;&quot;&quot;&lt;circle r=&quot;$l&quot; stroke-opacity=&quot;$c&quot; stroke=&quot;#$(hex(rgb))&quot; /&gt;&quot;&quot;&quot;)
+        y, x = 58 .* sincosd(-lch.h)
+        write(io, &quot;&quot;&quot;&lt;path d=&quot;m 0,0 l $x, $y&quot; stroke-opacity=&quot;$c&quot; stroke=&quot;#aaa&quot; /&gt;&quot;&quot;&quot;)
+    end
+    for (i, rgb) in enumerate(colors)
+        lch = rgb_to_lch(rgb)
+        c = min(lch.c / 130, 1.0)
+        y, x = (lch.l * 0.6) .* sincosd(-lch.h)
+        hex6 = hex(rgb)
+        if i &lt;= length(cw.colors1)
+            write(io, &quot;&quot;&quot;&lt;rect x=&quot;$(x-3)&quot; y=&quot;$(y-3)&quot; width=&quot;6&quot; height=&quot;6&quot; rx=&quot;1&quot; fill=&quot;#$hex6&quot; /&gt;&quot;&quot;&quot;)
+        else
+            write(io, &quot;&quot;&quot;&lt;circle cx=&quot;$x&quot; cy=&quot;$y&quot; r=&quot;3&quot; fill=&quot;#$hex6&quot; /&gt;&quot;&quot;&quot;)
+        end
+    end
+    write(io, &quot;&lt;/svg&gt;&quot;)
+end
+
+struct VariationSwatches
+    id::String
+    base::RGB
+    bg::RGB
+    choosed::Tuple{Int, Int}
+    VariationSwatches(id, base, bg, choosed=(0, 0)) = new(id, base, bg, choosed)
+end
+
+Base.showable(::MIME&quot;image/svg+xml&quot;, ::VariationSwatches) = true
+
+function Base.show(io::IO, ::MIME&quot;image/svg+xml&quot;, sw::VariationSwatches)
+    round3p1(x) = @sprintf(&quot;%5.1f&quot; , x)
+    write(io, &quot;&quot;&quot;&lt;svg id=&quot;$(sw.id)&quot; class=&quot;swatches&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      width=&quot;50mm&quot; height=&quot;50mm&quot; viewBox=&quot;0,0,120,120&quot; &gt;&quot;&quot;&quot;)
+    write(io, &quot;&quot;&quot;&lt;rect fill=&quot;#$(hex(sw.bg))&quot; width=&quot;120&quot; height=&quot;120&quot; /&gt;&quot;&quot;&quot;)
+    write(io, &quot;&quot;&quot;&lt;path fill=&quot;#aaa&quot; d=&quot;m 13,54 l -5,-3 v 6 z&quot; /&gt;&quot;&quot;&quot;)
+    write(io, &quot;&quot;&quot;&lt;path fill=&quot;#aaa&quot; d=&quot;m 60,8 l -3,-5 h 6 z&quot; /&gt;&quot;&quot;&quot;)
+    lch = rgb_to_lch(sw.base)
+    ls = range(lch.l + 10, lch.l - 10, length = 9)
+    cs = range(lch.c - 20, lch.c + 20, length = 9)
+    for i = 1:9, j = 1:9
+        y, x = (i - 1) * 10 + 10, (j - 1) * 10 + 16
+        lch_o = LCHab(ls[i], cs[j], lch.h)
+        rgb = lch_to_rgb8(lch_o)
+        lch_b = rgb_to_lch(rgb)
+        if isapprox(lch_o, lch_b, atol = 1.5)
+            hex6 = hex(rgb)
+            sl, sc, sh = round3p1.((lch_b.l, lch_b.c, lch_b.h))
+            cont = contrust(rgb, sw.bg)
+            scont = round3p1(cont)
+            rating = cont &lt; 4.5 ? &quot;fail&quot; : cont &lt; 7.0 ? &quot;AA&quot; : &quot;AAA&quot;
+            choosed = sw.choosed == (5 - i, j - 5) ? &quot;class=\&quot;choosed\&quot;&quot; : &quot;&quot;
+            write(io,
+                &quot;&quot;&quot;
+                &lt;g fill=&quot;#$hex6&quot;&gt;
+                  &lt;rect x=&quot;$x&quot; y=&quot;$y&quot; width=&quot;8&quot; height=&quot;8&quot; $choosed/&gt;
+                  &lt;text x=&quot;2&quot; y=&quot;107&quot; xml:space=&quot;preserve&quot;&gt;LCHab($sl,$sc,$sh)&lt;/text&gt;
+                  &lt;text x=&quot;2&quot; y=&quot;117&quot; xml:space=&quot;preserve&quot;&gt;#$hex6  $scont:1 ($rating)&lt;/text&gt;
+                &lt;/g&gt;
+                &quot;&quot;&quot;)
+        end
+    end
+    write(io, &quot;&quot;&quot;&lt;/svg&gt;&quot;&quot;&quot;)
+end
+
+end #module
+</code></pre><h2 id="YAML"><a class="docs-heading-anchor" href="#YAML">YAML</a><a id="YAML-1"></a><a class="docs-heading-anchor-permalink" href="#YAML" title="Permalink"></a></h2><h2 id="JSON"><a class="docs-heading-anchor" href="#JSON">JSON</a><a id="JSON-1"></a><a class="docs-heading-anchor-permalink" href="#JSON" title="Permalink"></a></h2><h2 id="HTML"><a class="docs-heading-anchor" href="#HTML">HTML</a><a id="HTML-1"></a><a class="docs-heading-anchor-permalink" href="#HTML" title="Permalink"></a></h2><h2 id="CSS"><a class="docs-heading-anchor" href="#CSS">CSS</a><a id="CSS-1"></a><a class="docs-heading-anchor-permalink" href="#CSS" title="Permalink"></a></h2></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../">« Introduction</a><a class="docs-footer-nextpage" href="../design-language/">Design Language »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Wednesday 4 November 2020 20:14">Wednesday 4 November 2020</span>. Using Julia version 1.5.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
