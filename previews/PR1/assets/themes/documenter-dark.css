@@ -7675,6 +7675,8 @@ html.theme--documenter-dark {
   html.theme--documenter-dark code.language-julia-repl > span.hljs-meta {
     color: #4ab034;
     font-weight: bolder; }
+  html.theme--documenter-dark code {
+    line-height: 1.44; }
   html.theme--documenter-dark .hljs {
     display: block;
     overflow-x: auto;

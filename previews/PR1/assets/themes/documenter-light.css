@@ -7807,3 +7807,6 @@ code.ansi span.sgr107 {
 code.language-julia-repl > span.hljs-meta {
   color: #066f00;
   font-weight: bolder; }
+
+code {
+  line-height: 1.44; }
