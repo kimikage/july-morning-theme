@@ -18,6 +18,21 @@ svg.swatches g rect.choosed {
     animation: stroke-blink 1s infinite alternate;
 }
 
+pre.contrast {
+    display: inline-block;
+    width: auto;
+}
+
+pre.terminal-dark {
+    display: none;
+}
+html.theme--documenter-dark pre.terminal-light {
+    display: none;
+}
+html.theme--documenter-dark pre.terminal-dark {
+    display: block;
+}
+
 @keyframes stroke-blink {
     0% {
         stroke-opacity: 0;
