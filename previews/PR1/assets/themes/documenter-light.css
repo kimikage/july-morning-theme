@@ -7622,7 +7622,7 @@ code.ansi span.sgr34 {
   color: #2149b0; }
 
 code.ansi span.sgr35 {
-  color: #7a4493; }
+  color: #7d4498; }
 
 code.ansi span.sgr36 {
   color: #007989; }
@@ -7646,7 +7646,7 @@ code.ansi span.sgr44 {
   background-color: #2149b0; }
 
 code.ansi span.sgr45 {
-  background-color: #7a4493; }
+  background-color: #7d4498; }
 
 code.ansi span.sgr46 {
   background-color: #007989; }
@@ -7670,7 +7670,7 @@ code.ansi span.sgr94 {
   color: #3c5dcd; }
 
 code.ansi span.sgr95 {
-  color: #8d53a8; }
+  color: #9256af; }
 
 code.ansi span.sgr96 {
   color: #008fa3; }
@@ -7694,7 +7694,7 @@ code.ansi span.sgr104 {
   background-color: #3c5dcd; }
 
 code.ansi span.sgr105 {
-  background-color: #8d53a8; }
+  background-color: #9256af; }
 
 code.ansi span.sgr106 {
   background-color: #008fa3; }
@@ -7724,7 +7724,7 @@ code.nohighlight {
 .hljs-keyword,
 .hljs-link,
 .hljs-selector-tag {
-  color: #7a4493; }
+  color: #7d4498; }
 
 .hljs-class,
 .hljs-name,
