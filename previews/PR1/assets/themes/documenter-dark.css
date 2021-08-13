@@ -630,22 +630,22 @@ a.has-text-dark:hover, a.has-text-dark:focus {
   background-color: #282f2f !important; }
 
 .has-text-primary {
-  color: #6cc8ca !important; }
+  color: #3dd0af !important; }
 
 a.has-text-primary:hover, a.has-text-primary:focus {
-  color: #47babc !important; }
+  color: #2baf92 !important; }
 
 .has-background-primary {
-  background-color: #6cc8ca !important; }
+  background-color: #3dd0af !important; }
 
 .has-text-link {
-  color: #6cc8ca !important; }
+  color: #3dd0af !important; }
 
 a.has-text-link:hover, a.has-text-link:focus {
-  color: #47babc !important; }
+  color: #2baf92 !important; }
 
 .has-background-link {
-  background-color: #6cc8ca !important; }
+  background-color: #3dd0af !important; }
 
 .has-text-info {
   color: #005e9e !important; }
@@ -1106,13 +1106,13 @@ html.theme--documenter-dark {
     font-weight: 400;
     line-height: 1.5; }
   html.theme--documenter-dark a {
-    color: #6cc8ca;
+    color: #3dd0af;
     cursor: pointer;
     text-decoration: none; }
     html.theme--documenter-dark a strong {
       color: currentColor; }
     html.theme--documenter-dark a:hover {
-      color: #1dd2af; }
+      color: #52d5b7; }
   html.theme--documenter-dark code {
     background-color: rgba(255, 255, 255, 0.05);
     color: #ff8674;
@@ -1171,9 +1171,9 @@ html.theme--documenter-dark {
     display: block;
     padding: 1.25rem; }
   html.theme--documenter-dark a.box:hover, html.theme--documenter-dark a.box:focus {
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #6cc8ca; }
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #3dd0af; }
   html.theme--documenter-dark a.box:active {
-    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #6cc8ca; }
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #3dd0af; }
   html.theme--documenter-dark .button {
     background-color: #282f2f;
     border-color: #4c5759;
@@ -1206,9 +1206,9 @@ html.theme--documenter-dark {
       color: #f2f2f2; }
     html.theme--documenter-dark .button:focus, html.theme--documenter-dark .button.is-focused {
       border-color: #8c9b9d;
-      color: #17a689; }
+      color: #2fc4a3; }
       html.theme--documenter-dark .button:focus:not(:active), html.theme--documenter-dark .button.is-focused:not(:active) {
-        box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .button:active, html.theme--documenter-dark .button.is-active {
       border-color: #343c3d;
       color: #f2f2f2; }
@@ -1505,31 +1505,31 @@ html.theme--documenter-dark {
           box-shadow: none;
           color: #ecf0f1; }
     html.theme--documenter-dark .button.is-primary, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       border-color: transparent;
       color: #fff; }
       html.theme--documenter-dark .button.is-primary:hover, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:hover, html.theme--documenter-dark .button.is-primary.is-hovered, html.theme--documenter-dark .docstring > section > a.button.is-hovered.docs-sourcelink {
-        background-color: #63c4c7;
+        background-color: #33ceab;
         border-color: transparent;
         color: #fff; }
       html.theme--documenter-dark .button.is-primary:focus, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:focus, html.theme--documenter-dark .button.is-primary.is-focused, html.theme--documenter-dark .docstring > section > a.button.is-focused.docs-sourcelink {
         border-color: transparent;
         color: #fff; }
         html.theme--documenter-dark .button.is-primary:focus:not(:active), html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:focus:not(:active), html.theme--documenter-dark .button.is-primary.is-focused:not(:active), html.theme--documenter-dark .docstring > section > a.button.is-focused.docs-sourcelink:not(:active) {
-          box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+          box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
       html.theme--documenter-dark .button.is-primary:active, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:active, html.theme--documenter-dark .button.is-primary.is-active, html.theme--documenter-dark .docstring > section > a.button.is-active.docs-sourcelink {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         border-color: transparent;
         color: #fff; }
       html.theme--documenter-dark .button.is-primary[disabled], html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink[disabled],
       fieldset[disabled] html.theme--documenter-dark .button.is-primary,
       fieldset[disabled] html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         border-color: transparent;
         box-shadow: none; }
       html.theme--documenter-dark .button.is-primary.is-inverted, html.theme--documenter-dark .docstring > section > a.button.is-inverted.docs-sourcelink {
         background-color: #fff;
-        color: #6cc8ca; }
+        color: #3dd0af; }
         html.theme--documenter-dark .button.is-primary.is-inverted:hover, html.theme--documenter-dark .docstring > section > a.button.is-inverted.docs-sourcelink:hover, html.theme--documenter-dark .button.is-primary.is-inverted.is-hovered, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-hovered.docs-sourcelink {
           background-color: #f2f2f2; }
         html.theme--documenter-dark .button.is-primary.is-inverted[disabled], html.theme--documenter-dark .docstring > section > a.button.is-inverted.docs-sourcelink[disabled],
@@ -1538,37 +1538,37 @@ html.theme--documenter-dark {
           background-color: #fff;
           border-color: transparent;
           box-shadow: none;
-          color: #6cc8ca; }
+          color: #3dd0af; }
       html.theme--documenter-dark .button.is-primary.is-loading::after, html.theme--documenter-dark .docstring > section > a.button.is-loading.docs-sourcelink::after {
         border-color: transparent transparent #fff #fff !important; }
       html.theme--documenter-dark .button.is-primary.is-outlined, html.theme--documenter-dark .docstring > section > a.button.is-outlined.docs-sourcelink {
         background-color: transparent;
-        border-color: #6cc8ca;
-        color: #6cc8ca; }
+        border-color: #3dd0af;
+        color: #3dd0af; }
         html.theme--documenter-dark .button.is-primary.is-outlined:hover, html.theme--documenter-dark .docstring > section > a.button.is-outlined.docs-sourcelink:hover, html.theme--documenter-dark .button.is-primary.is-outlined.is-hovered, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-hovered.docs-sourcelink, html.theme--documenter-dark .button.is-primary.is-outlined:focus, html.theme--documenter-dark .docstring > section > a.button.is-outlined.docs-sourcelink:focus, html.theme--documenter-dark .button.is-primary.is-outlined.is-focused, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-focused.docs-sourcelink {
-          background-color: #6cc8ca;
-          border-color: #6cc8ca;
+          background-color: #3dd0af;
+          border-color: #3dd0af;
           color: #fff; }
         html.theme--documenter-dark .button.is-primary.is-outlined.is-loading::after, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-loading.docs-sourcelink::after {
-          border-color: transparent transparent #6cc8ca #6cc8ca !important; }
+          border-color: transparent transparent #3dd0af #3dd0af !important; }
         html.theme--documenter-dark .button.is-primary.is-outlined.is-loading:hover::after, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-loading.docs-sourcelink:hover::after, html.theme--documenter-dark .button.is-primary.is-outlined.is-loading.is-hovered::after, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-loading.is-hovered.docs-sourcelink::after, html.theme--documenter-dark .button.is-primary.is-outlined.is-loading:focus::after, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-loading.docs-sourcelink:focus::after, html.theme--documenter-dark .button.is-primary.is-outlined.is-loading.is-focused::after, html.theme--documenter-dark .docstring > section > a.button.is-outlined.is-loading.is-focused.docs-sourcelink::after {
           border-color: transparent transparent #fff #fff !important; }
         html.theme--documenter-dark .button.is-primary.is-outlined[disabled], html.theme--documenter-dark .docstring > section > a.button.is-outlined.docs-sourcelink[disabled],
         fieldset[disabled] html.theme--documenter-dark .button.is-primary.is-outlined,
         fieldset[disabled] html.theme--documenter-dark .docstring > section > a.button.is-outlined.docs-sourcelink {
           background-color: transparent;
-          border-color: #6cc8ca;
+          border-color: #3dd0af;
           box-shadow: none;
-          color: #6cc8ca; }
+          color: #3dd0af; }
       html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.docs-sourcelink {
         background-color: transparent;
         border-color: #fff;
         color: #fff; }
         html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined:hover, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.docs-sourcelink:hover, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-hovered, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-hovered.docs-sourcelink, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined:focus, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.docs-sourcelink:focus, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-focused, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-focused.docs-sourcelink {
           background-color: #fff;
-          color: #6cc8ca; }
+          color: #3dd0af; }
         html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-loading:hover::after, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-loading.docs-sourcelink:hover::after, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-loading.is-hovered::after, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-loading.is-hovered.docs-sourcelink::after, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-loading:focus::after, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-loading.docs-sourcelink:focus::after, html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined.is-loading.is-focused::after, html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.is-loading.is-focused.docs-sourcelink::after {
-          border-color: transparent transparent #6cc8ca #6cc8ca !important; }
+          border-color: transparent transparent #3dd0af #3dd0af !important; }
         html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined[disabled], html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.docs-sourcelink[disabled],
         fieldset[disabled] html.theme--documenter-dark .button.is-primary.is-inverted.is-outlined,
         fieldset[disabled] html.theme--documenter-dark .docstring > section > a.button.is-inverted.is-outlined.docs-sourcelink {
@@ -1577,30 +1577,30 @@ html.theme--documenter-dark {
           box-shadow: none;
           color: #fff; }
     html.theme--documenter-dark .button.is-link {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       border-color: transparent;
       color: #fff; }
       html.theme--documenter-dark .button.is-link:hover, html.theme--documenter-dark .button.is-link.is-hovered {
-        background-color: #63c4c7;
+        background-color: #33ceab;
         border-color: transparent;
         color: #fff; }
       html.theme--documenter-dark .button.is-link:focus, html.theme--documenter-dark .button.is-link.is-focused {
         border-color: transparent;
         color: #fff; }
         html.theme--documenter-dark .button.is-link:focus:not(:active), html.theme--documenter-dark .button.is-link.is-focused:not(:active) {
-          box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+          box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
       html.theme--documenter-dark .button.is-link:active, html.theme--documenter-dark .button.is-link.is-active {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         border-color: transparent;
         color: #fff; }
       html.theme--documenter-dark .button.is-link[disabled],
       fieldset[disabled] html.theme--documenter-dark .button.is-link {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         border-color: transparent;
         box-shadow: none; }
       html.theme--documenter-dark .button.is-link.is-inverted {
         background-color: #fff;
-        color: #6cc8ca; }
+        color: #3dd0af; }
         html.theme--documenter-dark .button.is-link.is-inverted:hover, html.theme--documenter-dark .button.is-link.is-inverted.is-hovered {
           background-color: #f2f2f2; }
         html.theme--documenter-dark .button.is-link.is-inverted[disabled],
@@ -1608,36 +1608,36 @@ html.theme--documenter-dark {
           background-color: #fff;
           border-color: transparent;
           box-shadow: none;
-          color: #6cc8ca; }
+          color: #3dd0af; }
       html.theme--documenter-dark .button.is-link.is-loading::after {
         border-color: transparent transparent #fff #fff !important; }
       html.theme--documenter-dark .button.is-link.is-outlined {
         background-color: transparent;
-        border-color: #6cc8ca;
-        color: #6cc8ca; }
+        border-color: #3dd0af;
+        color: #3dd0af; }
         html.theme--documenter-dark .button.is-link.is-outlined:hover, html.theme--documenter-dark .button.is-link.is-outlined.is-hovered, html.theme--documenter-dark .button.is-link.is-outlined:focus, html.theme--documenter-dark .button.is-link.is-outlined.is-focused {
-          background-color: #6cc8ca;
-          border-color: #6cc8ca;
+          background-color: #3dd0af;
+          border-color: #3dd0af;
           color: #fff; }
         html.theme--documenter-dark .button.is-link.is-outlined.is-loading::after {
-          border-color: transparent transparent #6cc8ca #6cc8ca !important; }
+          border-color: transparent transparent #3dd0af #3dd0af !important; }
         html.theme--documenter-dark .button.is-link.is-outlined.is-loading:hover::after, html.theme--documenter-dark .button.is-link.is-outlined.is-loading.is-hovered::after, html.theme--documenter-dark .button.is-link.is-outlined.is-loading:focus::after, html.theme--documenter-dark .button.is-link.is-outlined.is-loading.is-focused::after {
           border-color: transparent transparent #fff #fff !important; }
         html.theme--documenter-dark .button.is-link.is-outlined[disabled],
         fieldset[disabled] html.theme--documenter-dark .button.is-link.is-outlined {
           background-color: transparent;
-          border-color: #6cc8ca;
+          border-color: #3dd0af;
           box-shadow: none;
-          color: #6cc8ca; }
+          color: #3dd0af; }
       html.theme--documenter-dark .button.is-link.is-inverted.is-outlined {
         background-color: transparent;
         border-color: #fff;
         color: #fff; }
         html.theme--documenter-dark .button.is-link.is-inverted.is-outlined:hover, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-hovered, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined:focus, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-focused {
           background-color: #fff;
-          color: #6cc8ca; }
+          color: #3dd0af; }
         html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-loading:hover::after, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-loading.is-hovered::after, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-loading:focus::after, html.theme--documenter-dark .button.is-link.is-inverted.is-outlined.is-loading.is-focused::after {
-          border-color: transparent transparent #6cc8ca #6cc8ca !important; }
+          border-color: transparent transparent #3dd0af #3dd0af !important; }
         html.theme--documenter-dark .button.is-link.is-inverted.is-outlined[disabled],
         fieldset[disabled] html.theme--documenter-dark .button.is-link.is-inverted.is-outlined {
           background-color: transparent;
@@ -2294,10 +2294,10 @@ html.theme--documenter-dark {
       background-color: #282f2f;
       color: #ecf0f1; }
     html.theme--documenter-dark .notification.is-primary, html.theme--documenter-dark .docstring > section > a.notification.docs-sourcelink {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
     html.theme--documenter-dark .notification.is-link {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
     html.theme--documenter-dark .notification.is-info {
       background-color: #005e9e;
@@ -2363,21 +2363,21 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .progress.is-dark:indeterminate, html.theme--documenter-dark .content kbd.progress:indeterminate {
       background-image: linear-gradient(to right, #282f2f 30%, #5e6d6f 30%); }
     html.theme--documenter-dark .progress.is-primary::-webkit-progress-value, html.theme--documenter-dark .docstring > section > a.progress.docs-sourcelink::-webkit-progress-value {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-primary::-moz-progress-bar, html.theme--documenter-dark .docstring > section > a.progress.docs-sourcelink::-moz-progress-bar {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-primary::-ms-fill, html.theme--documenter-dark .docstring > section > a.progress.docs-sourcelink::-ms-fill {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-primary:indeterminate, html.theme--documenter-dark .docstring > section > a.progress.docs-sourcelink:indeterminate {
-      background-image: linear-gradient(to right, #6cc8ca 30%, #5e6d6f 30%); }
+      background-image: linear-gradient(to right, #3dd0af 30%, #5e6d6f 30%); }
     html.theme--documenter-dark .progress.is-link::-webkit-progress-value {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-link::-moz-progress-bar {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-link::-ms-fill {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     html.theme--documenter-dark .progress.is-link:indeterminate {
-      background-image: linear-gradient(to right, #6cc8ca 30%, #5e6d6f 30%); }
+      background-image: linear-gradient(to right, #3dd0af 30%, #5e6d6f 30%); }
     html.theme--documenter-dark .progress.is-info::-webkit-progress-value {
       background-color: #005e9e; }
     html.theme--documenter-dark .progress.is-info::-moz-progress-bar {
@@ -2467,13 +2467,13 @@ html.theme--documenter-dark {
         color: #ecf0f1; }
       html.theme--documenter-dark .table td.is-primary,
       html.theme--documenter-dark .table th.is-primary {
-        background-color: #6cc8ca;
-        border-color: #6cc8ca;
+        background-color: #3dd0af;
+        border-color: #3dd0af;
         color: #fff; }
       html.theme--documenter-dark .table td.is-link,
       html.theme--documenter-dark .table th.is-link {
-        background-color: #6cc8ca;
-        border-color: #6cc8ca;
+        background-color: #3dd0af;
+        border-color: #3dd0af;
         color: #fff; }
       html.theme--documenter-dark .table td.is-info,
       html.theme--documenter-dark .table th.is-info {
@@ -2501,7 +2501,7 @@ html.theme--documenter-dark {
         width: 1%; }
       html.theme--documenter-dark .table td.is-selected,
       html.theme--documenter-dark .table th.is-selected {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         color: #fff; }
         html.theme--documenter-dark .table td.is-selected a,
         html.theme--documenter-dark .table td.is-selected strong,
@@ -2513,7 +2513,7 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .table th:not([align]) {
         text-align: left; }
     html.theme--documenter-dark .table tr.is-selected {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
       html.theme--documenter-dark .table tr.is-selected a,
       html.theme--documenter-dark .table tr.is-selected strong {
@@ -2629,10 +2629,10 @@ html.theme--documenter-dark {
       background-color: #282f2f;
       color: #ecf0f1; }
     html.theme--documenter-dark .tag:not(body).is-primary, html.theme--documenter-dark .docstring > section > a.docs-sourcelink:not(body), html.theme--documenter-dark .content kbd:not(body).is-primary {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
     html.theme--documenter-dark .tag:not(body).is-link, html.theme--documenter-dark .docstring > section > a.docs-sourcelink:not(body).is-link, html.theme--documenter-dark .content kbd:not(body).is-link {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
     html.theme--documenter-dark .tag:not(body).is-info, html.theme--documenter-dark .docstring > section > a.docs-sourcelink:not(body).is-info, html.theme--documenter-dark .content kbd:not(body).is-info {
       background-color: #005e9e;
@@ -2802,8 +2802,8 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .input:hover, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input:hover, html.theme--documenter-dark .textarea:hover, html.theme--documenter-dark .select select:hover, html.theme--documenter-dark .is-hovered.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-hovered, html.theme--documenter-dark .is-hovered.textarea, html.theme--documenter-dark .select select.is-hovered {
       border-color: #8c9b9d; }
     html.theme--documenter-dark .input:focus, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input:focus, html.theme--documenter-dark .textarea:focus, html.theme--documenter-dark .select select:focus, html.theme--documenter-dark .is-focused.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-focused, html.theme--documenter-dark .is-focused.textarea, html.theme--documenter-dark .select select.is-focused, html.theme--documenter-dark .input:active, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input:active, html.theme--documenter-dark .textarea:active, html.theme--documenter-dark .select select:active, html.theme--documenter-dark .is-active.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-active, html.theme--documenter-dark .is-active.textarea, html.theme--documenter-dark .select select.is-active {
-      border-color: #6cc8ca;
-      box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+      border-color: #3dd0af;
+      box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .input[disabled], html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input[disabled], html.theme--documenter-dark .textarea[disabled], html.theme--documenter-dark .select select[disabled],
     fieldset[disabled] html.theme--documenter-dark .input,
     fieldset[disabled] html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input,
@@ -2860,13 +2860,13 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .is-dark.input:focus, html.theme--documenter-dark .content kbd.input:focus, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-dark:focus, html.theme--documenter-dark .is-dark.textarea:focus, html.theme--documenter-dark .content kbd.textarea:focus, html.theme--documenter-dark .is-dark.is-focused.input, html.theme--documenter-dark .content kbd.is-focused.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-dark.is-focused, html.theme--documenter-dark .is-dark.is-focused.textarea, html.theme--documenter-dark .content kbd.is-focused.textarea, html.theme--documenter-dark .is-dark.input:active, html.theme--documenter-dark .content kbd.input:active, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-dark:active, html.theme--documenter-dark .is-dark.textarea:active, html.theme--documenter-dark .content kbd.textarea:active, html.theme--documenter-dark .is-dark.is-active.input, html.theme--documenter-dark .content kbd.is-active.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-dark.is-active, html.theme--documenter-dark .is-dark.is-active.textarea, html.theme--documenter-dark .content kbd.is-active.textarea {
         box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25); }
     html.theme--documenter-dark .is-primary.input, html.theme--documenter-dark .docstring > section > a.input.docs-sourcelink, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-primary, html.theme--documenter-dark .is-primary.textarea, html.theme--documenter-dark .docstring > section > a.textarea.docs-sourcelink {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
       html.theme--documenter-dark .is-primary.input:focus, html.theme--documenter-dark .docstring > section > a.input.docs-sourcelink:focus, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-primary:focus, html.theme--documenter-dark .is-primary.textarea:focus, html.theme--documenter-dark .docstring > section > a.textarea.docs-sourcelink:focus, html.theme--documenter-dark .is-primary.is-focused.input, html.theme--documenter-dark .docstring > section > a.is-focused.input.docs-sourcelink, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-primary.is-focused, html.theme--documenter-dark .is-primary.is-focused.textarea, html.theme--documenter-dark .docstring > section > a.is-focused.textarea.docs-sourcelink, html.theme--documenter-dark .is-primary.input:active, html.theme--documenter-dark .docstring > section > a.input.docs-sourcelink:active, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-primary:active, html.theme--documenter-dark .is-primary.textarea:active, html.theme--documenter-dark .docstring > section > a.textarea.docs-sourcelink:active, html.theme--documenter-dark .is-primary.is-active.input, html.theme--documenter-dark .docstring > section > a.is-active.input.docs-sourcelink, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-primary.is-active, html.theme--documenter-dark .is-primary.is-active.textarea, html.theme--documenter-dark .docstring > section > a.is-active.textarea.docs-sourcelink {
-        box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .is-link.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-link, html.theme--documenter-dark .is-link.textarea {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
       html.theme--documenter-dark .is-link.input:focus, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-link:focus, html.theme--documenter-dark .is-link.textarea:focus, html.theme--documenter-dark .is-link.is-focused.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-link.is-focused, html.theme--documenter-dark .is-link.is-focused.textarea, html.theme--documenter-dark .is-link.input:active, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-link:active, html.theme--documenter-dark .is-link.textarea:active, html.theme--documenter-dark .is-link.is-active.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-link.is-active, html.theme--documenter-dark .is-link.is-active.textarea {
-        box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .is-info.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-info, html.theme--documenter-dark .is-info.textarea {
       border-color: #005e9e; }
       html.theme--documenter-dark .is-info.input:focus, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-info:focus, html.theme--documenter-dark .is-info.textarea:focus, html.theme--documenter-dark .is-info.is-focused.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-info.is-focused, html.theme--documenter-dark .is-info.is-focused.textarea, html.theme--documenter-dark .is-info.input:active, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-info:active, html.theme--documenter-dark .is-info.textarea:active, html.theme--documenter-dark .is-info.is-active.input, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.is-info.is-active, html.theme--documenter-dark .is-info.is-active.textarea {
@@ -2943,7 +2943,7 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .select:not(.is-multiple) {
       height: 2.25em; }
     html.theme--documenter-dark .select:not(.is-multiple):not(.is-loading)::after {
-      border-color: #6cc8ca;
+      border-color: #3dd0af;
       right: 1.125em;
       z-index: 4; }
     html.theme--documenter-dark .select.is-rounded select, html.theme--documenter-dark #documenter .docs-sidebar form.docs-search > input.select select {
@@ -3002,21 +3002,21 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .select.is-dark select:focus, html.theme--documenter-dark .content kbd.select select:focus, html.theme--documenter-dark .select.is-dark select.is-focused, html.theme--documenter-dark .content kbd.select select.is-focused, html.theme--documenter-dark .select.is-dark select:active, html.theme--documenter-dark .content kbd.select select:active, html.theme--documenter-dark .select.is-dark select.is-active, html.theme--documenter-dark .content kbd.select select.is-active {
         box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25); }
     html.theme--documenter-dark .select.is-primary:not(:hover)::after, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink:not(:hover)::after {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
     html.theme--documenter-dark .select.is-primary select, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
       html.theme--documenter-dark .select.is-primary select:hover, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select:hover, html.theme--documenter-dark .select.is-primary select.is-hovered, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select.is-hovered {
-        border-color: #59c1c3; }
+        border-color: #2fc4a3; }
       html.theme--documenter-dark .select.is-primary select:focus, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select:focus, html.theme--documenter-dark .select.is-primary select.is-focused, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select.is-focused, html.theme--documenter-dark .select.is-primary select:active, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select:active, html.theme--documenter-dark .select.is-primary select.is-active, html.theme--documenter-dark .docstring > section > a.select.docs-sourcelink select.is-active {
-        box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .select.is-link:not(:hover)::after {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
     html.theme--documenter-dark .select.is-link select {
-      border-color: #6cc8ca; }
+      border-color: #3dd0af; }
       html.theme--documenter-dark .select.is-link select:hover, html.theme--documenter-dark .select.is-link select.is-hovered {
-        border-color: #59c1c3; }
+        border-color: #2fc4a3; }
       html.theme--documenter-dark .select.is-link select:focus, html.theme--documenter-dark .select.is-link select.is-focused, html.theme--documenter-dark .select.is-link select:active, html.theme--documenter-dark .select.is-link select.is-active {
-        box-shadow: 0 0 0 0.125em rgba(108, 200, 202, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(61, 208, 175, 0.25); }
     html.theme--documenter-dark .select.is-info:not(:hover)::after {
       border-color: #005e9e; }
     html.theme--documenter-dark .select.is-info select {
@@ -3144,35 +3144,35 @@ html.theme--documenter-dark {
       border-color: transparent;
       color: #ecf0f1; }
     html.theme--documenter-dark .file.is-primary .file-cta, html.theme--documenter-dark .docstring > section > a.file.docs-sourcelink .file-cta {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-primary:hover .file-cta, html.theme--documenter-dark .docstring > section > a.file.docs-sourcelink:hover .file-cta, html.theme--documenter-dark .file.is-primary.is-hovered .file-cta, html.theme--documenter-dark .docstring > section > a.file.is-hovered.docs-sourcelink .file-cta {
-      background-color: #63c4c7;
+      background-color: #33ceab;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-primary:focus .file-cta, html.theme--documenter-dark .docstring > section > a.file.docs-sourcelink:focus .file-cta, html.theme--documenter-dark .file.is-primary.is-focused .file-cta, html.theme--documenter-dark .docstring > section > a.file.is-focused.docs-sourcelink .file-cta {
       border-color: transparent;
-      box-shadow: 0 0 0.5em rgba(108, 200, 202, 0.25);
+      box-shadow: 0 0 0.5em rgba(61, 208, 175, 0.25);
       color: #fff; }
     html.theme--documenter-dark .file.is-primary:active .file-cta, html.theme--documenter-dark .docstring > section > a.file.docs-sourcelink:active .file-cta, html.theme--documenter-dark .file.is-primary.is-active .file-cta, html.theme--documenter-dark .docstring > section > a.file.is-active.docs-sourcelink .file-cta {
-      background-color: #59c1c3;
+      background-color: #2fc4a3;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-link .file-cta {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-link:hover .file-cta, html.theme--documenter-dark .file.is-link.is-hovered .file-cta {
-      background-color: #63c4c7;
+      background-color: #33ceab;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-link:focus .file-cta, html.theme--documenter-dark .file.is-link.is-focused .file-cta {
       border-color: transparent;
-      box-shadow: 0 0 0.5em rgba(108, 200, 202, 0.25);
+      box-shadow: 0 0 0.5em rgba(61, 208, 175, 0.25);
       color: #fff; }
     html.theme--documenter-dark .file.is-link:active .file-cta, html.theme--documenter-dark .file.is-link.is-active .file-cta {
-      background-color: #59c1c3;
+      background-color: #2fc4a3;
       border-color: transparent;
       color: #fff; }
     html.theme--documenter-dark .file.is-info .file-cta {
@@ -3378,9 +3378,9 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .help.is-dark, html.theme--documenter-dark .content kbd.help {
       color: #282f2f; }
     html.theme--documenter-dark .help.is-primary, html.theme--documenter-dark .docstring > section > a.help.docs-sourcelink {
-      color: #6cc8ca; }
+      color: #3dd0af; }
     html.theme--documenter-dark .help.is-link {
-      color: #6cc8ca; }
+      color: #3dd0af; }
     html.theme--documenter-dark .help.is-info {
       color: #005e9e; }
     html.theme--documenter-dark .help.is-success {
@@ -3597,12 +3597,12 @@ html.theme--documenter-dark {
     white-space: nowrap; }
     html.theme--documenter-dark .breadcrumb a {
       align-items: center;
-      color: #6cc8ca;
+      color: #3dd0af;
       display: flex;
       justify-content: center;
       padding: 0 0.75em; }
       html.theme--documenter-dark .breadcrumb a:hover {
-        color: #1dd2af; }
+        color: #52d5b7; }
     html.theme--documenter-dark .breadcrumb li {
       align-items: center;
       display: flex; }
@@ -3741,7 +3741,7 @@ html.theme--documenter-dark {
       color: #0a0a0a; }
     html.theme--documenter-dark a.dropdown-item.is-active,
     html.theme--documenter-dark button.dropdown-item.is-active {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
   html.theme--documenter-dark .dropdown-divider {
     background-color: #5e6d6f;
@@ -3832,7 +3832,7 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .list-item:not(:last-child) {
       border-bottom: 1px solid #5e6d6f; }
     html.theme--documenter-dark .list-item.is-active {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
   html.theme--documenter-dark a.list-item {
     background-color: #282f2f;
@@ -3897,7 +3897,7 @@ html.theme--documenter-dark {
         background-color: #282f2f;
         color: #f2f2f2; }
       html.theme--documenter-dark .menu-list a.is-active {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         color: #fff; }
     html.theme--documenter-dark .menu-list li ul {
       border-left: 1px solid #5e6d6f;
@@ -3960,21 +3960,21 @@ html.theme--documenter-dark {
         border-color: #282f2f;
         color: #212526; }
     html.theme--documenter-dark .message.is-primary, html.theme--documenter-dark .docstring > section > a.message.docs-sourcelink {
-      background-color: #f8fcfc; }
+      background-color: #f7fdfc; }
       html.theme--documenter-dark .message.is-primary .message-header, html.theme--documenter-dark .docstring > section > a.message.docs-sourcelink .message-header {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         color: #fff; }
       html.theme--documenter-dark .message.is-primary .message-body, html.theme--documenter-dark .docstring > section > a.message.docs-sourcelink .message-body {
-        border-color: #6cc8ca;
-        color: #284b4c; }
+        border-color: #3dd0af;
+        color: #153730; }
     html.theme--documenter-dark .message.is-link {
-      background-color: #f8fcfc; }
+      background-color: #f7fdfc; }
       html.theme--documenter-dark .message.is-link .message-header {
-        background-color: #6cc8ca;
+        background-color: #3dd0af;
         color: #fff; }
       html.theme--documenter-dark .message.is-link .message-body {
-        border-color: #6cc8ca;
-        color: #284b4c; }
+        border-color: #3dd0af;
+        color: #153730; }
     html.theme--documenter-dark .message.is-info {
       background-color: #f5fbff; }
       html.theme--documenter-dark .message.is-info .message-header {
@@ -4313,7 +4313,7 @@ html.theme--documenter-dark {
           background-color: #282f2f;
           color: #ecf0f1; } }
     html.theme--documenter-dark .navbar.is-primary, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
       html.theme--documenter-dark .navbar.is-primary .navbar-brand > .navbar-item, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-brand > .navbar-item,
       html.theme--documenter-dark .navbar.is-primary .navbar-brand .navbar-link,
@@ -4326,7 +4326,7 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-brand .navbar-link:hover,
       html.theme--documenter-dark .navbar.is-primary .navbar-brand .navbar-link.is-active,
       html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-brand .navbar-link.is-active {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         color: #fff; }
       html.theme--documenter-dark .navbar.is-primary .navbar-brand .navbar-link::after, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-brand .navbar-link::after {
         border-color: #fff; }
@@ -4360,7 +4360,7 @@ html.theme--documenter-dark {
         html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-end .navbar-link:hover,
         html.theme--documenter-dark .navbar.is-primary .navbar-end .navbar-link.is-active,
         html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-end .navbar-link.is-active {
-          background-color: #59c1c3;
+          background-color: #2fc4a3;
           color: #fff; }
         html.theme--documenter-dark .navbar.is-primary .navbar-start .navbar-link::after, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-start .navbar-link::after,
         html.theme--documenter-dark .navbar.is-primary .navbar-end .navbar-link::after,
@@ -4371,13 +4371,13 @@ html.theme--documenter-dark {
         html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-item.has-dropdown:hover .navbar-link,
         html.theme--documenter-dark .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link,
         html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-item.has-dropdown.is-active .navbar-link {
-          background-color: #59c1c3;
+          background-color: #2fc4a3;
           color: #fff; }
         html.theme--documenter-dark .navbar.is-primary .navbar-dropdown a.navbar-item.is-active, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-dropdown a.navbar-item.is-active {
-          background-color: #6cc8ca;
+          background-color: #3dd0af;
           color: #fff; } }
     html.theme--documenter-dark .navbar.is-link {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
       html.theme--documenter-dark .navbar.is-link .navbar-brand > .navbar-item,
       html.theme--documenter-dark .navbar.is-link .navbar-brand .navbar-link {
@@ -4386,7 +4386,7 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .navbar.is-link .navbar-brand .navbar-link:focus,
       html.theme--documenter-dark .navbar.is-link .navbar-brand .navbar-link:hover,
       html.theme--documenter-dark .navbar.is-link .navbar-brand .navbar-link.is-active {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         color: #fff; }
       html.theme--documenter-dark .navbar.is-link .navbar-brand .navbar-link::after {
         border-color: #fff; }
@@ -4408,7 +4408,7 @@ html.theme--documenter-dark {
         html.theme--documenter-dark .navbar.is-link .navbar-end .navbar-link:focus,
         html.theme--documenter-dark .navbar.is-link .navbar-end .navbar-link:hover,
         html.theme--documenter-dark .navbar.is-link .navbar-end .navbar-link.is-active {
-          background-color: #59c1c3;
+          background-color: #2fc4a3;
           color: #fff; }
         html.theme--documenter-dark .navbar.is-link .navbar-start .navbar-link::after,
         html.theme--documenter-dark .navbar.is-link .navbar-end .navbar-link::after {
@@ -4416,10 +4416,10 @@ html.theme--documenter-dark {
         html.theme--documenter-dark .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link,
         html.theme--documenter-dark .navbar.is-link .navbar-item.has-dropdown:hover .navbar-link,
         html.theme--documenter-dark .navbar.is-link .navbar-item.has-dropdown.is-active .navbar-link {
-          background-color: #59c1c3;
+          background-color: #2fc4a3;
           color: #fff; }
         html.theme--documenter-dark .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
-          background-color: #6cc8ca;
+          background-color: #3dd0af;
           color: #fff; } }
     html.theme--documenter-dark .navbar.is-info {
       background-color: #005e9e;
@@ -4711,13 +4711,13 @@ html.theme--documenter-dark {
       padding-bottom: calc(0.5rem - 1px); }
       html.theme--documenter-dark .navbar-item.is-tab:focus, html.theme--documenter-dark .navbar-item.is-tab:hover {
         background-color: transparent;
-        border-bottom-color: #6cc8ca; }
+        border-bottom-color: #3dd0af; }
       html.theme--documenter-dark .navbar-item.is-tab.is-active {
         background-color: transparent;
-        border-bottom-color: #6cc8ca;
+        border-bottom-color: #3dd0af;
         border-bottom-style: solid;
         border-bottom-width: 3px;
-        color: #6cc8ca;
+        color: #3dd0af;
         padding-bottom: calc(0.5rem - 3px); }
   html.theme--documenter-dark .navbar-content {
     flex-grow: 1;
@@ -4963,7 +4963,7 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .pagination-next:hover,
     html.theme--documenter-dark .pagination-link:hover {
       border-color: #8c9b9d;
-      color: #1dd2af; }
+      color: #52d5b7; }
     html.theme--documenter-dark .pagination-previous:focus,
     html.theme--documenter-dark .pagination-next:focus,
     html.theme--documenter-dark .pagination-link:focus {
@@ -4986,8 +4986,8 @@ html.theme--documenter-dark {
     padding-right: 0.75em;
     white-space: nowrap; }
   html.theme--documenter-dark .pagination-link.is-current {
-    background-color: #6cc8ca;
-    border-color: #6cc8ca;
+    background-color: #3dd0af;
+    border-color: #3dd0af;
     color: #fff; }
   html.theme--documenter-dark .pagination-ellipsis {
     color: #8c9b9d;
@@ -5063,11 +5063,11 @@ html.theme--documenter-dark {
       padding: 0.5em; }
       html.theme--documenter-dark .panel-tabs a.is-active {
         border-bottom-color: #343c3d;
-        color: #17a689; }
+        color: #2fc4a3; }
   html.theme--documenter-dark .panel-list a {
     color: #fff; }
     html.theme--documenter-dark .panel-list a:hover {
-      color: #6cc8ca; }
+      color: #3dd0af; }
   html.theme--documenter-dark .panel-block {
     align-items: center;
     color: #f2f2f2;
@@ -5083,10 +5083,10 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .panel-block.is-wrapped {
       flex-wrap: wrap; }
     html.theme--documenter-dark .panel-block.is-active {
-      border-left-color: #6cc8ca;
-      color: #17a689; }
+      border-left-color: #3dd0af;
+      color: #2fc4a3; }
       html.theme--documenter-dark .panel-block.is-active .panel-icon {
-        color: #6cc8ca; }
+        color: #3dd0af; }
   html.theme--documenter-dark a.panel-block,
   html.theme--documenter-dark label.panel-block {
     cursor: pointer; }
@@ -5132,8 +5132,8 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .tabs li {
       display: block; }
       html.theme--documenter-dark .tabs li.is-active a {
-        border-bottom-color: #6cc8ca;
-        color: #6cc8ca; }
+        border-bottom-color: #3dd0af;
+        color: #3dd0af; }
     html.theme--documenter-dark .tabs ul {
       align-items: center;
       border-bottom-color: #5e6d6f;
@@ -5191,8 +5191,8 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .tabs.is-toggle li:last-child a {
       border-radius: 0 0.4em 0.4em 0; }
     html.theme--documenter-dark .tabs.is-toggle li.is-active a {
-      background-color: #6cc8ca;
-      border-color: #6cc8ca;
+      background-color: #3dd0af;
+      border-color: #3dd0af;
       color: #fff;
       z-index: 1; }
     html.theme--documenter-dark .tabs.is-toggle ul {
@@ -6582,7 +6582,7 @@ html.theme--documenter-dark {
           html.theme--documenter-dark .hero.is-dark.is-bold .navbar-menu, html.theme--documenter-dark .content kbd.hero.is-bold .navbar-menu {
             background-image: linear-gradient(141deg, #0f1615 0%, #282f2f 71%, #313c40 100%); } }
     html.theme--documenter-dark .hero.is-primary, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
       html.theme--documenter-dark .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
       html.theme--documenter-dark .hero.is-primary strong,
@@ -6598,7 +6598,7 @@ html.theme--documenter-dark {
           color: #fff; }
       @media screen and (max-width: 1055px) {
         html.theme--documenter-dark .hero.is-primary .navbar-menu, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .navbar-menu {
-          background-color: #6cc8ca; } }
+          background-color: #3dd0af; } }
       html.theme--documenter-dark .hero.is-primary .navbar-item, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .navbar-item,
       html.theme--documenter-dark .hero.is-primary .navbar-link,
       html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .navbar-link {
@@ -6608,7 +6608,7 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .navbar-link:hover,
       html.theme--documenter-dark .hero.is-primary .navbar-link.is-active,
       html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .navbar-link.is-active {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         color: #fff; }
       html.theme--documenter-dark .hero.is-primary .tabs a, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .tabs a {
         color: #fff;
@@ -6624,14 +6624,14 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .hero.is-primary .tabs.is-boxed li.is-active a, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .tabs.is-boxed li.is-active a, html.theme--documenter-dark .hero.is-primary .tabs.is-boxed li.is-active a:hover, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .tabs.is-boxed li.is-active a:hover, html.theme--documenter-dark .hero.is-primary .tabs.is-toggle li.is-active a, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .tabs.is-toggle li.is-active a, html.theme--documenter-dark .hero.is-primary .tabs.is-toggle li.is-active a:hover, html.theme--documenter-dark .docstring > section > a.hero.docs-sourcelink .tabs.is-toggle li.is-active a:hover {
         background-color: #fff;
         border-color: #fff;
-        color: #6cc8ca; }
+        color: #3dd0af; }
       html.theme--documenter-dark .hero.is-primary.is-bold, html.theme--documenter-dark .docstring > section > a.hero.is-bold.docs-sourcelink {
-        background-image: linear-gradient(141deg, #3ac9b4 0%, #6cc8ca 71%, #7ac4d5 100%); }
+        background-image: linear-gradient(141deg, #20ba7e 0%, #3dd0af 71%, #4cdad2 100%); }
         @media screen and (max-width: 768px) {
           html.theme--documenter-dark .hero.is-primary.is-bold .navbar-menu, html.theme--documenter-dark .docstring > section > a.hero.is-bold.docs-sourcelink .navbar-menu {
-            background-image: linear-gradient(141deg, #3ac9b4 0%, #6cc8ca 71%, #7ac4d5 100%); } }
+            background-image: linear-gradient(141deg, #20ba7e 0%, #3dd0af 71%, #4cdad2 100%); } }
     html.theme--documenter-dark .hero.is-link {
-      background-color: #6cc8ca;
+      background-color: #3dd0af;
       color: #fff; }
       html.theme--documenter-dark .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
       html.theme--documenter-dark .hero.is-link strong {
@@ -6645,14 +6645,14 @@ html.theme--documenter-dark {
           color: #fff; }
       @media screen and (max-width: 1055px) {
         html.theme--documenter-dark .hero.is-link .navbar-menu {
-          background-color: #6cc8ca; } }
+          background-color: #3dd0af; } }
       html.theme--documenter-dark .hero.is-link .navbar-item,
       html.theme--documenter-dark .hero.is-link .navbar-link {
         color: rgba(255, 255, 255, 0.7); }
       html.theme--documenter-dark .hero.is-link a.navbar-item:hover, html.theme--documenter-dark .hero.is-link a.navbar-item.is-active,
       html.theme--documenter-dark .hero.is-link .navbar-link:hover,
       html.theme--documenter-dark .hero.is-link .navbar-link.is-active {
-        background-color: #59c1c3;
+        background-color: #2fc4a3;
         color: #fff; }
       html.theme--documenter-dark .hero.is-link .tabs a {
         color: #fff;
@@ -6668,12 +6668,12 @@ html.theme--documenter-dark {
       html.theme--documenter-dark .hero.is-link .tabs.is-boxed li.is-active a, html.theme--documenter-dark .hero.is-link .tabs.is-boxed li.is-active a:hover, html.theme--documenter-dark .hero.is-link .tabs.is-toggle li.is-active a, html.theme--documenter-dark .hero.is-link .tabs.is-toggle li.is-active a:hover {
         background-color: #fff;
         border-color: #fff;
-        color: #6cc8ca; }
+        color: #3dd0af; }
       html.theme--documenter-dark .hero.is-link.is-bold {
-        background-image: linear-gradient(141deg, #3ac9b4 0%, #6cc8ca 71%, #7ac4d5 100%); }
+        background-image: linear-gradient(141deg, #20ba7e 0%, #3dd0af 71%, #4cdad2 100%); }
         @media screen and (max-width: 768px) {
           html.theme--documenter-dark .hero.is-link.is-bold .navbar-menu {
-            background-image: linear-gradient(141deg, #3ac9b4 0%, #6cc8ca 71%, #7ac4d5 100%); } }
+            background-image: linear-gradient(141deg, #20ba7e 0%, #3dd0af 71%, #4cdad2 100%); } }
     html.theme--documenter-dark .hero.is-info {
       background-color: #005e9e;
       color: #fff; }
@@ -6952,15 +6952,15 @@ html.theme--documenter-dark {
       border-color: #282f2f;
       box-shadow: 0 0 0 2px rgba(40, 47, 47, 0.5); }
     html.theme--documenter-dark .button.is-primary.is-hovered, html.theme--documenter-dark .docstring > section > a.button.is-hovered.docs-sourcelink, html.theme--documenter-dark .button.is-primary:hover, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:hover {
-      background-color: #88d3d4; }
+      background-color: #5cd7bc; }
     html.theme--documenter-dark .button.is-primary.is-active, html.theme--documenter-dark .docstring > section > a.button.is-active.docs-sourcelink, html.theme--documenter-dark .button.is-primary.is-focused, html.theme--documenter-dark .docstring > section > a.button.is-focused.docs-sourcelink, html.theme--documenter-dark .button.is-primary:active, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:active, html.theme--documenter-dark .button.is-primary:focus, html.theme--documenter-dark .docstring > section > a.button.docs-sourcelink:focus {
-      border-color: #6cc8ca;
-      box-shadow: 0 0 0 2px rgba(108, 200, 202, 0.5); }
+      border-color: #3dd0af;
+      box-shadow: 0 0 0 2px rgba(61, 208, 175, 0.5); }
     html.theme--documenter-dark .button.is-link.is-hovered, html.theme--documenter-dark .button.is-link:hover {
-      background-color: #88d3d4; }
+      background-color: #5cd7bc; }
     html.theme--documenter-dark .button.is-link.is-active, html.theme--documenter-dark .button.is-link.is-focused, html.theme--documenter-dark .button.is-link:active, html.theme--documenter-dark .button.is-link:focus {
-      border-color: #6cc8ca;
-      box-shadow: 0 0 0 2px rgba(108, 200, 202, 0.5); }
+      border-color: #3dd0af;
+      box-shadow: 0 0 0 2px rgba(61, 208, 175, 0.5); }
     html.theme--documenter-dark .button.is-info.is-hovered, html.theme--documenter-dark .button.is-info:hover {
       background-color: #0075c4; }
     html.theme--documenter-dark .button.is-info.is-active, html.theme--documenter-dark .button.is-info.is-focused, html.theme--documenter-dark .button.is-info:active, html.theme--documenter-dark .button.is-info:focus {
@@ -7084,7 +7084,7 @@ html.theme--documenter-dark {
     html.theme--documenter-dark .navbar.is-transparent {
       background: none; }
     html.theme--documenter-dark .navbar.is-primary .navbar-dropdown a.navbar-item.is-active, html.theme--documenter-dark .docstring > section > a.navbar.docs-sourcelink .navbar-dropdown a.navbar-item.is-active {
-      background-color: #6cc8ca; }
+      background-color: #3dd0af; }
     @media screen and (max-width: 1055px) {
       html.theme--documenter-dark .navbar .navbar-menu {
         background-color: #375a7f;
@@ -7110,13 +7110,13 @@ html.theme--documenter-dark {
     border-width: 1px;
     margin-bottom: -1px; }
     html.theme--documenter-dark .panel-tabs a.is-active {
-      border-bottom-color: #17a689; }
+      border-bottom-color: #2fc4a3; }
   html.theme--documenter-dark .panel-block:hover {
-    color: #1dd2af; }
+    color: #52d5b7; }
     html.theme--documenter-dark .panel-block:hover .panel-icon {
-      color: #1dd2af; }
+      color: #52d5b7; }
   html.theme--documenter-dark .panel-block.is-active .panel-icon {
-    color: #17a689; }
+    color: #2fc4a3; }
   html.theme--documenter-dark .tabs a {
     border-bottom-width: 1px;
     margin-bottom: -1px; }
@@ -7289,15 +7289,15 @@ html.theme--documenter-dark {
       cursor: pointer;
       width: 12px; }
     html.theme--documenter-dark .outdated-warning-overlay a {
-      color: #6cc8ca; }
+      color: #3dd0af; }
       html.theme--documenter-dark .outdated-warning-overlay a:hover {
-        color: #1dd2af; }
+        color: #52d5b7; }
   html.theme--documenter-dark .content pre {
     border: 1px solid #5e6d6f; }
   html.theme--documenter-dark .content code {
     font-weight: inherit; }
   html.theme--documenter-dark .content a code {
-    color: #6cc8ca; }
+    color: #3dd0af; }
   html.theme--documenter-dark .content h1 code, html.theme--documenter-dark .content h2 code, html.theme--documenter-dark .content h3 code, html.theme--documenter-dark .content h4 code, html.theme--documenter-dark .content h5 code, html.theme--documenter-dark .content h6 code {
     color: #f2f2f2; }
   html.theme--documenter-dark .content table {
@@ -7328,7 +7328,8 @@ html.theme--documenter-dark {
   html.theme--documenter-dark #documenter .docs-main > article {
     overflow-wrap: break-word; }
     html.theme--documenter-dark #documenter .docs-main > article .math-container {
-      overflow-x: auto; }
+      overflow-x: auto;
+      overflow-y: hidden; }
   @media screen and (min-width: 1056px) {
     html.theme--documenter-dark #documenter .docs-main {
       max-width: 52rem;
@@ -7676,7 +7677,12 @@ html.theme--documenter-dark {
     color: #4fb43a;
     font-weight: bolder; }
   html.theme--documenter-dark code.nohighlight {
-    line-height: 1.44; }
+    line-height: 1.42; }
+  html.theme--documenter-dark code.nohighlight span {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -1px;
+    margin-bottom: -1px; }
   html.theme--documenter-dark .hljs {
     display: block;
     overflow-x: auto;
@@ -7713,7 +7719,7 @@ html.theme--documenter-dark {
   html.theme--documenter-dark .hljs-symbol,
   html.theme--documenter-dark .hljs-selector-id,
   html.theme--documenter-dark .hljs-tag {
-    color: #1abc9c; }
+    color: #3dd0af; }
   html.theme--documenter-dark .hljs-addition,
   html.theme--documenter-dark .hljs-meta-string,
   html.theme--documenter-dark .hljs-section,
