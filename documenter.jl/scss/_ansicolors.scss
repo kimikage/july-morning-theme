@@ -1,0 +1,182 @@
+$ansi-black: $black-ter !default;
+$ansi-red: null !default;
+$ansi-green: null !default;
+$ansi-yellow: null !default;
+$ansi-blue: null !default;
+$ansi-magenta: null !default;
+$ansi-cyan: null !default;
+$ansi-white: null !default;
+
+$ansi-light-black: null !default;
+$ansi-light-red: null !default;
+$ansi-light-green: null !default;
+$ansi-light-yellow: null !default;
+$ansi-light-blue: null !default;
+$ansi-light-magenta: null !default;
+$ansi-light-cyan: null !default;
+$ansi-light-white: $white-ter !default;
+
+@import "./ansicolors_def";
+
+code.ansi span {
+  &.sgr1 {
+    font-weight: bolder;
+  }
+
+  &.sgr2 {
+    font-weight: lighter;
+  }
+
+  &.sgr3 {
+    font-style: italic;
+  }
+
+  &.sgr4 {
+    text-decoration: underline;
+  }
+
+  &.sgr7 {
+    color: $body-background-color;
+    background-color: $text;
+  }
+
+  &.sgr8 {
+    color: transparent;
+
+    span {
+      color: transparent;
+    }
+  }
+
+  &.sgr9 {
+    text-decoration: line-through;
+  }
+
+  &.sgr30 {
+    color: $ansi-black;
+  }
+
+  &.sgr31 {
+    color: $ansi-red;
+  }
+
+  &.sgr32 {
+    color: $ansi-green;
+  }
+
+  &.sgr33 {
+    color: $ansi-yellow;
+  }
+
+  &.sgr34 {
+    color: $ansi-blue;
+  }
+
+  &.sgr35 {
+    color: $ansi-magenta;
+  }
+
+  &.sgr36 {
+    color: $ansi-cyan;
+  }
+
+  &.sgr37 {
+    color: $ansi-white;
+  }
+
+  &.sgr40 {
+    background-color: $ansi-black;
+  }
+
+  &.sgr41 {
+    background-color: $ansi-red;
+  }
+
+  &.sgr42 {
+    background-color: $ansi-green;
+  }
+
+  &.sgr43 {
+    background-color: $ansi-yellow;
+  }
+
+  &.sgr44 {
+    background-color: $ansi-blue;
+  }
+
+  &.sgr45 {
+    background-color: $ansi-magenta;
+  }
+
+  &.sgr46 {
+    background-color: $ansi-cyan;
+  }
+
+  &.sgr47 {
+    background-color: $ansi-white;
+  }
+
+  &.sgr90 {
+    color: $ansi-light-black;
+  }
+
+  &.sgr91 {
+    color: $ansi-light-red;
+  }
+
+  &.sgr92 {
+    color: $ansi-light-green;
+  }
+
+  &.sgr93 {
+    color: $ansi-light-yellow;
+  }
+
+  &.sgr94 {
+    color: $ansi-light-blue;
+  }
+
+  &.sgr95 {
+    color: $ansi-light-magenta;
+  }
+
+  &.sgr96 {
+    color: $ansi-light-cyan;
+  }
+
+  &.sgr97 {
+    color: $ansi-light-white;
+  }
+
+  &.sgr100 {
+    background-color: $ansi-light-black;
+  }
+
+  &.sgr101 {
+    background-color: $ansi-light-red;
+  }
+
+  &.sgr102 {
+    background-color: $ansi-light-green;
+  }
+
+  &.sgr103 {
+    background-color: $ansi-light-yellow;
+  }
+
+  &.sgr104 {
+    background-color: $ansi-light-blue;
+  }
+
+  &.sgr105 {
+    background-color: $ansi-light-magenta;
+  }
+
+  &.sgr106 {
+    background-color: $ansi-light-cyan;
+  }
+
+  &.sgr107 {
+    background-color: $ansi-light-white;
+  }
+}
